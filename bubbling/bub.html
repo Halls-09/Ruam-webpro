@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling</title>
+    <script src ="bling.js" defer></script>
+</head>
+<style>
+    body{
+        background: linear-gradient(to right, rgb(77, 146, 242) , rgb(48, 67, 79));
+        font-size: 20px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .Outbox{
+        border-radius: 10px;
+        padding: 30px 30px;
+        margin: 60px;
+        background: lightpink;
+        color: black;  
+        cursor: pointer;
+    }
+    .Inbox{
+        border-radius: 10px;
+        padding: 5px 30px;
+        margin: 10px;
+        background: white;
+        color: black;  
+    }
+    .reset{
+        border-radius: 10px;
+        padding: 1px 10px;
+        width: 50px;
+        margin: 30px auto;
+        background: lightgreen;
+        color: white;  
+        text-align: center;
+        display: flex;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="Outbox">
+        <p>Outsidebox</p>
+        <div class="Inbox">
+            <p>Insidebox</p>
+        </div>
+    </div>
+    <div class="reset">
+        <p>Reset</p>
+    </div>
+</body>
+</html>
